@@ -2,7 +2,7 @@ import configparser
 import threading
 class Config:
     # __new__ 用于创建实例，而__init__用于初始化实例
-    __configfile = r'D:\workspace\2021\webflash20\venv\web\config.ini'
+    __configfile = r'D:\PycharmProjects\2021\webflash20\venv\web\config\config.ini'
     __flag = False
     __instance_lock = threading.Lock() # 定义一把锁
 

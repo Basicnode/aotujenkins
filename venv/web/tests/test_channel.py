@@ -1,5 +1,5 @@
 import pytest
-@pytest.mark.usefixtures('login')
+# @pytest.mark.usefixtures('login')
 class TestChannel:
 
     def test_add_channel_001(self):
@@ -10,4 +10,4 @@ class TestChannel:
 
 
 if __name__ == '__main__':
-    pytest.main(['-s'])
+    pytest.main(['-s','-v'])

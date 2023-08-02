@@ -1,11 +1,11 @@
 import pytest
 from web.common.driver_factory import Driver
 from web.page.login_page import LoginPage
-@pytest.fixture()
+@pytest.fixture(autouse=True)
 def login(driver):
     log = LoginPage(driver)
     log.open()
-    log.login('admin','admin')
+    log.login('testdy@service.aliyun.com','dingyang123')
     print('我是通用的，登录成功啦')
 
 @pytest.fixture()

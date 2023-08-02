@@ -3,13 +3,12 @@ from selenium.webdriver.common.by import By
 import time
 driver = webdriver.Chrome()
 driver.get('http://flash-admin.enilu.cn/#/login?redirect=%2Fdashboard')
+# driver.get('http://account.alibabacloud.com/login/login.htm')
 # time.sleep(5) 固定
 driver.implicitly_wait(10)  # 智能等待
 selenium.webdriver.remote.webelement.WebElement
 
 driver.find_element(By.NAME,'username')
-
-
 print(type(driver.find_element_by_name('username')))
 driver.find_element_by_name('password')
 

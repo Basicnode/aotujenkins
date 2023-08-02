@@ -6,7 +6,7 @@
 import pytest
 import allure
 
-# @pytest.mark.v222
+@pytest.mark.v2221
 # @pytest.mark.usefixtures('test001')
 @pytest.fixture(autouse=True)
 # @pytest.fixture()
@@ -27,6 +27,6 @@ class TestCase:
         assert 'u' in s
 
 
-if __name__ == '__main__':
-#     pytest.main(['-m','v001','-v', '-s'])
-    pytest.main(['-v', '-s'])
+# if __name__ == '__main__':
+# #     pytest.main(['-m','v001','-v', '-s'])
+#     pytest.main(['-v', '-s'])
